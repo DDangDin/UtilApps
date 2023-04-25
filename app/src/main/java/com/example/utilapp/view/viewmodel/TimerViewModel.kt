@@ -4,11 +4,12 @@ import android.os.CountDownTimer
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.utilapp.util.CounterInterface
+import com.example.utilapp.util.CounterOptions.counterCancel
+import com.example.utilapp.util.CounterOptions.counterStart
 import java.text.DecimalFormat
 import java.text.NumberFormat
 
-class TimerViewModel : ViewModel(), CounterInterface {
+class TimerViewModel : ViewModel() {
     private lateinit var timerObject: CountDownTimer
 
     private val _time = MutableLiveData("00:00:00")

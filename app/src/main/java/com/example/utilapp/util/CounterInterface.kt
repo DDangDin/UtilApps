@@ -2,8 +2,7 @@ package com.example.utilapp.util
 
 import android.os.CountDownTimer
 
-interface CounterInterface {
+object CounterOptions {
     fun counterStart(countDownTimer: CountDownTimer) = countDownTimer.start()
     fun counterCancel(countDownTimer: CountDownTimer) = countDownTimer.cancel()
-
 }
